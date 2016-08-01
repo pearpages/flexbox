@@ -12,55 +12,28 @@
         border: 1px solid black;
         width: 100px;
         height: 100px;
-        display:flex;
+        display: flex;
         justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
     }
-</style>
-
-<style>
-    .flex-container {
-        display: flex;
+    .container {
         border: solid 4px #000;
-        height:100px;
     }
-</style>
-
-<div class="flex-container">
-    <div class="e">1</div>
-    <div class="e">2</div>
-    <div class="e">3</div>
-</div>
-
-<br>
-
-<style>
-    .flex-container-inline {
+    .flex {
+        display: flex;
+    }
+    .inline-flex {
         display: inline-flex;
-        border: solid 4px #000;
-        height:100px;        
     }
-</style>
-
-<div class="flex-container-inline">
-    <div class="e">1</div>
-    <div class="e">2</div>
-    <div class="e">3</div>
-</div>
-
-<br>
-<br>
-
-<style>
-    .flex-container-reverse {
-        display: flex;
+    .reverse {
         flex-direction: row-reverse;
-        border: solid 4px #000;
-        height:100px;        
+    }
+    .column {
+        flex-direction: column;
     }
 </style>
 
-<div class="flex-container-reverse">
+<div class="container flex">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
@@ -68,14 +41,32 @@
 
 <br>
 
-<style>
-    .flex-container-column {
-        flex-direction: column;
-        border: solid 4px #000;
-    }
-</style>
+<div class="container inline-flex">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+</div>
 
-<div class="flex-container-column">
+<br>
+<br>
+
+<div class="container flex reverse">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+</div>
+
+<br>
+
+<div class="flex container column">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+</div>
+
+<br>
+
+<div class="inline-flex container column">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
