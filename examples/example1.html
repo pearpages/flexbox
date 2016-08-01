@@ -1,20 +1,13 @@
 <style>
-    .flex-container {
-        display: flex;
-        border: solid 4px #000;
-        height:100px;
+    .e:first-child {
+        background-color: purple;
     }
-    .flex-container-inline {
-        display: inline-flex;
-        border: solid 4px #000;
-        height:100px;        
+    .e:nth-child(2) {
+        background-color: green;
     }
-    .flex-container-reverse {
-        display: flex;
-        flex-direction: row-reverse;
-        border: solid 4px #000;
-        height:100px;        
-    }    
+    .e:nth-child(3) {
+        background-color: red;
+    }
     .e{
         border: 1px solid black;
         width: 100px;
@@ -22,6 +15,14 @@
         display:flex;
         justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
+    }
+</style>
+
+<style>
+    .flex-container {
+        display: flex;
+        border: solid 4px #000;
+        height:100px;
     }
 </style>
 
@@ -33,6 +34,14 @@
 
 <br>
 
+<style>
+    .flex-container-inline {
+        display: inline-flex;
+        border: solid 4px #000;
+        height:100px;        
+    }
+</style>
+
 <div class="flex-container-inline">
     <div class="e">1</div>
     <div class="e">2</div>
@@ -42,7 +51,31 @@
 <br>
 <br>
 
+<style>
+    .flex-container-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        border: solid 4px #000;
+        height:100px;        
+    }
+</style>
+
 <div class="flex-container-reverse">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+</div>
+
+<br>
+
+<style>
+    .flex-container-column {
+        flex-direction: column;
+        border: solid 4px #000;
+    }
+</style>
+
+<div class="flex-container-column">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
