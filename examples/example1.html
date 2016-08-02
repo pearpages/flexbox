@@ -8,6 +8,36 @@
     .e:nth-child(3) {
         background-color: red;
     }
+    .e:nth-child(4) {
+        background-color: purple;
+    }
+    .e:nth-child(5) {
+        background-color: green;
+    }
+    .e:nth-child(6) {
+        background-color: red;
+    }
+    .e:nth-child(7) {
+        background-color: purple;
+    }
+    .e:nth-child(8) {
+        background-color: green;
+    }
+    .e:nth-child(9) {
+        background-color: red;
+    }
+    .e:nth-child(10) {
+        background-color: purple;
+    }
+    .e:nth-child(11) {
+        background-color: green;
+    }
+    .e:nth-child(12) {
+        background-color: red;
+    }
+    .e:nth-child(13) {
+        background-color: purple;
+    }            
     .e{
         border: 1px solid black;
         width: 100px;
@@ -19,6 +49,9 @@
     .container {
         border: solid 4px #000;
         margin-bottom: 20px;
+    }
+    .container-500-height {
+        height: 500px;
     }
     .flex {
         display: flex;
@@ -35,7 +68,18 @@
     .column-reverse {
         flex-direction: column-reverse;
     }
+    .no-wrap {
+        flex-wrap: nowrap;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .reverse-wrap {
+        flex-wrap: wrap-reverse;
+    }
 </style>
+
+<h3>Flex</h3>
 
 <div class="container flex">
     <div class="e">1</div>
@@ -43,11 +87,15 @@
     <div class="e">3</div>
 </div>
 
+<h3>Inline Flex</h3>
+
 <div class="container inline-flex">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
 </div>
+
+<h3>Reverse Flex</h3>
 
 <div class="container flex reverse">
     <div class="e">1</div>
@@ -55,11 +103,15 @@
     <div class="e">3</div>
 </div>
 
+<h3>Inline Flex Column Reverse</h3>
+
 <div class="inline-flex container column-reverse">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
 </div>
+
+<h3>Flex Column</h3>
 
 <div class="flex container column">
     <div class="e">1</div>
@@ -67,8 +119,141 @@
     <div class="e">3</div>
 </div>
 
+<h3>Inline Flex Column</h3>
+
 <div class="inline-flex container column">
     <div class="e">1</div>
     <div class="e">2</div>
     <div class="e">3</div>
+</div>
+
+<h3>Inline Wrap Flex</h3>
+
+<div class="inline-flex container wrap">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<h3>Inline No-Wrap Flex</h3>
+
+<div class="inline-flex container no-wrap (no-wrap is the default behaviour)">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<h3>Column Flex</h3>
+
+<div class="flex column container container-500-height">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<h3>Column Flex Wrap (width 100%)</h3>
+
+<div class="flex column container container-500-height wrap">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<h3>Inline-Flex Column Wrap (500px height)</h3>
+
+<div class="inline-flex column container container-500-height wrap">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<h3>Inline-Flex Column ReverseWrap (500px height)</h3>
+
+<div class="inline-flex column container container-500-height reverse-wrap">
+    <div class="e">1</div>
+    <div class="e">2</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e">8</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
+</div>
+
+<hr>
+
+<h2>flex-flow</h2>
+
+<p>We can combine <i>flex direction</i> and <i>flex wrap</i> with <i>flex flow</i></p>
+
+<hr>
+
+<h3>Playing with order</h3>
+
+<p>Doesn't change the source order. So accessibility tools will describe the source order.</p>
+
+<p>Use it for visual purposes, but not logical reordering.</p>
+
+<div class="flex container wrap">
+    <div class="e" style="order: 1">1 (order 1)</div>
+    <div class="e" style="order: 2">2 (order 2)</div>
+    <div class="e">3</div>
+    <div class="e">4</div>
+    <div class="e">5</div>
+    <div class="e">6</div>
+    <div class="e">7</div>
+    <div class="e" style="order: -10">8 (order -10)</div>
+    <div class="e">9</div>
+    <div class="e">10</div>
+    <div class="e">11</div>
+    <div class="e">12</div>
 </div>
