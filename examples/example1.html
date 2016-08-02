@@ -229,13 +229,9 @@
     <div class="e">12</div>
 </div>
 
-<hr>
-
-<h2>flex-flow</h2>
+<h3>flex-flow</h3>
 
 <p>We can combine <i>flex direction</i> and <i>flex wrap</i> with <i>flex flow</i></p>
-
-<hr>
 
 <h3>Playing with order</h3>
 
@@ -257,3 +253,11 @@
     <div class="e">11</div>
     <div class="e">12</div>
 </div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $('div.container').hide();
+    $('h3').click(function(){
+        $(this).next('.container').toggle();
+    })
+</script>
