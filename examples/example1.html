@@ -40,11 +40,23 @@
     }            
     .e{
         border: 1px solid black;
-        width: 100px;
+        min-width: 100px;
         height: 100px;
         display: flex;
         justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
+    }
+    .e-grow-1 {
+        flex-grow: 1;
+    }
+    .e-grow-4 {
+        flex-grow: 4;
+    }
+    .e-shrink-2 {
+        flex-shrink: 2;
+    }
+    .e-shrink-0 {
+        flex-shrink: 0;
     }
     .container {
         border: solid 4px #000;
@@ -253,6 +265,46 @@
     <div class="e">11</div>
     <div class="e">12</div>
 </div>
+
+<h3>Flex Grow Factor 1</h3>
+
+<div class="flex container">
+    <div class="e e-grow-1">1</div>
+    <div class="e e-grow-1">2</div>
+    <div class="e e-grow-1">3</div>
+</div>
+
+<h3>Flex Grow Factor 1 and 4</h3>
+
+<div class="flex container">
+    <div class="e e-grow-1">1</div>
+    <div class="e e-grow-4">2 (grow 4)</div>
+    <div class="e e-grow-1">3</div>
+</div>
+
+<h3>Flex Shrink 2</h3>
+
+<div class="flex container">
+    <div class="e e-shrink-2">1 (shrink 2)</div>
+    <div class="e e-grow-1">2</div>
+    <div class="e e-grow-1">3</div>
+</div>
+
+<h3>Flex Shrink 0</h3>
+
+<div class="flex container">
+    <div class="e e-shrink-0">1 (shrink 0)</div>
+    <div class="e e-grow-1">2</div>
+    <div class="e e-grow-1">3</div>
+</div>
+
+<h3>Shorthand</h3>
+
+<p>flex: flex-grow flex-shrink flex-basis;</p>
+
+<pre>flex: 0 1 auto;</pre>
+
+<p>In the example, the elements do not grow when we increase the space, but they do shrink when we decrease the space.</p>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
